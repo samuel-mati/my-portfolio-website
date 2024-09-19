@@ -615,7 +615,7 @@ footer .social-media a {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.service-icon,.bx {
+.service-icon {
     font-size: 3rem;
     color: var(--main-color);
     margin-bottom: 1rem;
