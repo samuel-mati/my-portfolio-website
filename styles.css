@@ -576,3 +576,91 @@ footer .social-media a {
 .links{
     color: var(--main-color);
 }
+
+
+/* General Services Section Styling */
+#services {
+    padding: 4rem 2rem;
+    background-color: var(--bg-color);
+    margin-top: 3rem;
+}
+
+#services .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+#services .heading span {
+    color: var(--main-color);
+}
+
+/* Service Card Styling */
+.service-card {
+    background: var(--secondary-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 75%; /* Width of each card */
+    height: 60vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon,.bx {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: left;
+    
+}
+
+.service-card ul li strong {
+    color: var(--main-color);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .service-card {
+        width: 75%; /* Width of each card */
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-card {
+        width: 75%; /* Width of each card */
+    }
+}
