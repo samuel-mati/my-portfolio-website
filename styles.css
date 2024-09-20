@@ -186,6 +186,7 @@ span{
     margin: 2rem 0 3rem;
 }
 
+
 /* Services container */
 .services h2{
     margin-bottom: 5rem;
@@ -222,10 +223,10 @@ span{
     margin: 1rem 0 3rem;
 }
 
+
 /* Portfolio Section */
 .portfolio-section {
     background-color: var(--bg-color);
-    padding: 10rem 9%;
 }
 
 .portfolio-section h2 {
@@ -243,16 +244,13 @@ span{
 }
 
 .portfolio-container .portfolio-box {
-    background-color: var(--secondary-bg-color);
-    border-radius: 2rem;
-    padding: 3rem;
-    text-align: center;
     flex: 1 1 30rem;
-    transition: 0.5s ease;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
     border: .2rem solid var(--bg-color);
-    height: 40rem; /* Set a fixed height for all cards */
-    overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
+    transition: 0.5s ease;
 }
 
 .portfolio-container .portfolio-box:hover {
@@ -301,6 +299,7 @@ span{
             0%, 100% { opacity: 0; }
             25%, 75% { opacity: 1; }
         }
+
 /* Contact Section */
 .contact {
     padding: 10rem 9% 2rem;
@@ -472,112 +471,7 @@ footer .social-media a {
 }
 
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    /* Hide the navbar links and display the menu icon on small screens */
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: var(--bg-color);
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
 
-    .navbar a {
-        display: block;
-        margin: 1.5rem 0;
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-
-    /* Show the menu icon */
-    #menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* Adjust logo font size for smaller screens */
-    .logo {
-        font-size: 2rem;
-    }
-
-    /* When the navbar is active (visible), display it as a block */
-    .navbar.active {
-        display: flex;
-    }
-    /* Ensure the home section displays content as a block */
-    .home {
-        display: block;
-        text-align: center;
-        padding: 5rem 2rem; /* Adjust padding for smaller screens */
-    }
-
-    /* Adjust home image to take full width */
-    .home-img img {
-        width: 100%; /* Full width on smaller screens */
-        max-width: 300px; /* Max width to prevent it from getting too large */
-        margin: 2rem auto; /* Center the image with auto margins */
-    }
-
-    /* Adjust heading font sizes for better readability */
-    .home-content h3 {
-        font-size: 2.5rem;
-    }
-
-    .home-content h2 {
-        font-size: 4rem;
-    }
-
-    /* Adjust paragraph font size */
-    .home-content p {
-        font-size: 1.4rem;
-        margin: 2rem 0;
-    }
-
-    /* Adjust the social media icons */
-    .social-media a {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.4rem;
-    }
-
-    /* Adjust the download CV button */
-    .btn {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-    }
-}
-/* For very small screens (mobile devices) */
-@media (max-width: 480px) {
-    .home-content h3 {
-        font-size: 2rem;
-    }
-
-    .home-content h2 {
-        font-size: 3rem;
-    }
-
-    .home-content p {
-        font-size: 1.2rem;
-    }
-
-    /* Reduce size of social icons even further for very small screens */
-    .social-media a {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.2rem;
-    }
-
-    /* Reduce button size */
-    .btn {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.5rem;
-    }
-}
 
 
 /* About Page Styling */
@@ -589,16 +483,8 @@ footer .social-media a {
 
 /* General Services Section Styling */
 #services {
-    padding: 4rem 2rem;
     background-color: var(--bg-color);
-    margin-top: 3rem;
-}
-
-#services .heading {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
+    margin-top: 2rem;
 }
 
 #services .heading span {
@@ -615,7 +501,7 @@ footer .social-media a {
     margin-top: 2rem;
     text-align: center;
     width: 75%; /* Width of each card */
-    height: 60vh;
+    height: auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -661,10 +547,147 @@ footer .social-media a {
     color: var(--main-color);
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+        min-height: auto;
+        padding: 5rem;
+    }
+
+    /* Hide the navbar links and display the menu icon on small screens */
+    .navbar {
+        display: none; /* Hidden on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Show the menu icon */
+    #menu-icon {
+        display: block; /* Menu icon visible on small screens */
+        cursor: pointer;
+    }
+
+    /* Adjust logo font size for smaller screens */
+    .logo {
+        font-size: 2rem;
+    }
+
+    /* When the navbar is active (visible), display it as a block */
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    /* Ensure the home section displays content as a block */
+    .home {
+        margin-top: 4rem;
+        display: block;
+        text-align: center;
+        padding: 3rem; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust home image to take full width */
+    img {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 300px; /* Max width to prevent it from getting too large */
+        margin: 2rem auto; /* Center the image with auto margins */
+    }
+
+    /* Adjust heading font sizes for better readability */
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    /* Adjust paragraph font size */
+    p {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    /* Adjust the social media icons */
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    /* Adjust the download CV button */
+    .btn {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+    section {
+        padding: 4rem;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    .heading {
+        text-align: center;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    /* Reduce size of social icons even further for very small screens */
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+
+    /* Reduce button size */
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
     .service-card {
-        width: 75%; /* Width of each card */
+        width: 100%;
+    }
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex; /* Show navbar on larger screens */
+        flex-direction: row; /* Horizontal layout for navbar links */
+    }
+
+    .service-card {
+        width: 100%;
+        font-size: 80%; /* Width of each card */
     }
 }
 
