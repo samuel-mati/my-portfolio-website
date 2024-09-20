@@ -50,9 +50,14 @@ section{
 
 .logo{
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--text-color);
-    cursor: default;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+.logo:hover{
+    color: var(--main-color);
+    transform: scale(1.1);
 }
 
 .navbar a{
@@ -155,9 +160,13 @@ span{
     background: var(--secondary-bg-color);
 }
 
-.about-img img{
+.about-img img {
     width: 30vw;
+    border-radius: 50%; /* Makes the image round */
+    border: .3rem solid var(--main-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
 }
+
 
 .heading{
     text-align: center;
